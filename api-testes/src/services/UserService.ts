@@ -5,7 +5,7 @@ export class UserService {
     private currentId = 1;
 
     createUser(name: string, email: string): User{
-        if(name.trim.length < 3){
+        if(name.trim().length < 3){
             throw new Error('Número de caracteres não suficiente');
         }
         if (!name || !email){
