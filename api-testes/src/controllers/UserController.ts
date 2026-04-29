@@ -30,5 +30,6 @@ export class UserController {
         if(!user){
             return response.status(404).json({ error: 'Email não encontrado'});
         };
+        return response.status(200).json(user);
     };
 };

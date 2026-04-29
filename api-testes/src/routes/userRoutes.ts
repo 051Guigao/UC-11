@@ -10,7 +10,7 @@ userRoutes.get('/users', (request, response) =>
     userController.list(request,response));
 userRoutes.get('/users/:id', (request, response) =>
     userController.findById(request, response));
-userRoutes.get('/users/:email', (request, response) =>
+userRoutes.get('/users/email/:email', (request, response) =>
     userController.findByEmail(request, response));
 
 export {userRoutes};
